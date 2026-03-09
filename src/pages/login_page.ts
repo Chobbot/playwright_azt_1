@@ -51,8 +51,10 @@ export class LoginPage {
     await test.step("Login", async () => {
       await this.fillUsername(username);
       await this.fillPassword(password);
-      return await this.clickLogin();
+      await this.clickLogin();
     });
+
+    return new DashboardPage(this.page);
     // Je možné i:
     // return new DashboardPage(this.page);
   }

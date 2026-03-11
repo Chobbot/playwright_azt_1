@@ -1,5 +1,5 @@
 import { expect, Locator, Page } from "@playwright/test";
-import { ProjectTasksPage } from "./project_tasks_page.ts";
+import { ProjectTasksPage } from "./project_task_page.ts";
 import { ProjectsPage } from "../projects_page.ts";
 
 export class CreateNewProjectModal {
